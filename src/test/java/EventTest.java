@@ -41,9 +41,9 @@ public class EventTest {
 
   @Test
   public void newEvent_EventEstimate() {
-    Event testEvent = new Event(1, 1, 1, 1, 0);
-    Integer expected = 15;
-    assertEquals(expected, testEvent.addEstimateTotal(1, 1, 1, 1, 0));
+    Event testEvent = new Event(1, 1, 1, 1, 5);
+    Integer expected = 520;
+    assertEquals(expected, testEvent.addEstimateTotal(1, 1, 1, 1, 2));
   }
 
 }

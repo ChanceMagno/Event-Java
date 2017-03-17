@@ -36,8 +36,12 @@ public class Event {
   public Integer addEstimateTotal(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, int couponAdded) {
     Integer estimateTotal = 0;
     if(couponAdded == 0){
-       estimateTotal = partySize * 10 + foodSelected * 5;
-    } return estimateTotal;
+       estimateTotal = partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500 * couponAdded;
+    } else if (couponAdded == 1) {
+      estimateTotal = (partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500) - 100;
+    }  else if (couponAdded == 2){ 
+      estimateTotal = partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500;
+    }return estimateTotal;
 
   }
 }
