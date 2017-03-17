@@ -29,7 +29,8 @@ public class EventTest {
 
   @Test
   public void newEvent_EntertainmentSelected() {
-    assertEquals(1, testEvent.entertainmentSelected());
+    Event testEvent = new Event(1, 1, 1, 1);
+    assertEquals(1, testEvent.getEntertainmentSelected());
   }
 
 }
