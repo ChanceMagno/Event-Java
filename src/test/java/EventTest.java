@@ -15,4 +15,10 @@ public class EventTest {
     assertEquals(1, testEvent.getPartySize());
   }
 
+  @Test
+  public void runEvent_Foodselected() {
+    Event testEvent = new Event(1, 1, 1, 1);
+    assertEquals(1, testEvent.getFoodSelected());
+  }
+
 }
