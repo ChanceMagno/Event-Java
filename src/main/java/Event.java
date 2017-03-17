@@ -3,8 +3,9 @@ public class Event {
   private int mFoodSelected;
   private int mDrinkSelected;
   private int mEntertainmentSelected;
+  private boolean mCouponAdded;
 
-  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected) {
+  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, couponAdded) {
     mPartySize = partySize;
     mFoodSelected = foodSelected;
     mDrinkSelected = drinkSelected;
@@ -25,6 +26,6 @@ public class Event {
   }
 
   public int getEntertainmentSelected() {
-    return 1;
+    return mEntertainmentSelected;
   }
 }
