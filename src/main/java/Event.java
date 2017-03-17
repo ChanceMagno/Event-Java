@@ -11,7 +11,6 @@ public class Event {
     mDrinkSelected = drinkSelected;
     mEntertainmentSelected = entertainmentSelected;
     mCouponAdded = couponAdded;
-
   }
 
   public int getPartySize() {
@@ -32,5 +31,13 @@ public class Event {
 
   public int getCouponAdded() {
     return mCouponAdded;
+  }
+
+  public Integer addEstimateTotal(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, int couponAdded) {
+    Integer estimateTotal = 0;
+    if(couponAdded == 0){
+       estimateTotal = partySize * 10 + foodSelected * 5;
+    } return estimateTotal;
+
   }
 }
