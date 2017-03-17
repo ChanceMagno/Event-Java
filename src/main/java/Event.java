@@ -3,13 +3,14 @@ public class Event {
   private int mFoodSelected;
   private int mDrinkSelected;
   private int mEntertainmentSelected;
-  private boolean mCouponAdded;
+  private int mCouponAdded;
 
-  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, boolean couponAdded) {
+  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, int couponAdded) {
     mPartySize = partySize;
     mFoodSelected = foodSelected;
     mDrinkSelected = drinkSelected;
     mEntertainmentSelected = entertainmentSelected;
+    mCouponAdded = couponAdded;
 
   }
 
@@ -29,7 +30,7 @@ public class Event {
     return mEntertainmentSelected;
   }
 
-  public boolean getCouponAdded() {
-    return true;
+  public int getCouponAdded() {
+    return mCouponAdded;
   }
 }
