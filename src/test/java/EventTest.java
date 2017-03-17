@@ -36,7 +36,7 @@ public class EventTest {
   @Test
   public void newEvent_couponAdded() {
     Event testEvent = new Event(1, 1, 1, 1, true);
-    assertEquals(true, testEvent.couponAdded());
+    assertEquals(true, testEvent.getCouponAdded());
   }
 
 }

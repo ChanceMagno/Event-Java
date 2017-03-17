@@ -5,7 +5,7 @@ public class Event {
   private int mEntertainmentSelected;
   private boolean mCouponAdded;
 
-  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, couponAdded) {
+  public Event(int partySize, int foodSelected, int drinkSelected, int entertainmentSelected, boolean couponAdded) {
     mPartySize = partySize;
     mFoodSelected = foodSelected;
     mDrinkSelected = drinkSelected;
@@ -27,5 +27,9 @@ public class Event {
 
   public int getEntertainmentSelected() {
     return mEntertainmentSelected;
+  }
+
+  public boolean getCouponAdded() {
+    return true;
   }
 }
