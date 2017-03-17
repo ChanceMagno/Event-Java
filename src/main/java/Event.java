@@ -39,9 +39,8 @@ public class Event {
        estimateTotal = partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500 * couponAdded;
     } else if (couponAdded == 1) {
       estimateTotal = (partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500) - 100;
-    }  else if (couponAdded == 2){ 
+    }  else if (couponAdded == 2){
       estimateTotal = partySize * 10 + foodSelected * 5 * partySize + drinkSelected * 5 * partySize + entertainmentSelected * 500;
     }return estimateTotal;
-
   }
 }

@@ -45,5 +45,4 @@ public class EventTest {
     Integer expected = 520;
     assertEquals(expected, testEvent.addEstimateTotal(1, 1, 1, 1, 2));
   }
-
 }
