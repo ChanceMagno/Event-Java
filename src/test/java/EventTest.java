@@ -4,27 +4,32 @@ import static org.junit.Assert.*;
 public class EventTest {
 
   @Test
-  public void runEvent_instantiatesCorrectly() {
+  public void newEvent_instantiatesCorrectly() {
     Event testEvent = new Event(1, 1, 1, 1);
     assertEquals(true, testEvent instanceof Event);
   }
 
   @Test
-  public void runEvent_partySizeSelected() {
+  public void newEvent_partySizeSelected() {
     Event testEvent = new Event(1, 1, 1, 1);
     assertEquals(1, testEvent.getPartySize());
   }
 
   @Test
-  public void runEvent_Foodselected() {
+  public void newEvent_Foodselected() {
     Event testEvent = new Event(1, 1, 1, 1);
     assertEquals(1, testEvent.getFoodSelected());
   }
 
   @Test
-  public void runEvent_DrinkSelected() {
+  public void newEvent_DrinkSelected() {
     Event testEvent = new Event(1, 1, 1, 1);
     assertEquals(1, testEvent.getDrinkSelected());
+  }
+
+  @Test
+  public void newEvent_EntertainmentSelected() {
+    assertEquals(1, testEvent.entertainmentSelected());
   }
 
 }
