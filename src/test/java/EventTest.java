@@ -9,4 +9,10 @@ public class EventTest {
     assertEquals(true, testEvent instanceof Event);
   }
 
+  @Test
+  public void runEvent_partySizeSelected() {
+    Event testEvent = new Event(1, 1, 1, 1);
+    assertEquals(1, testEvent.getPartySize());
+  }
+
 }
